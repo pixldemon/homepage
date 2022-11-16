@@ -1,0 +1,20 @@
+# NetlfiyCMS configuration
+# https://www.netlifycms.org/docs/configuration-options/#configuration-file
+backend:
+  name: git-gateway
+
+media_folder: public/img
+public_folder: /img
+
+collections:
+  - name: 'pages'
+    label: 'Page'
+    folder: 'content'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
