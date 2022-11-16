@@ -5,7 +5,7 @@
 				<div id="branding">
 					<img id="logo" src="/img/logo.png">
 					<header id="branding-mobile">
-						<h1>Moritz' ~</h1>
+						<h1>Moritz.dev</h1>
 					</header>
 					<header id="branding-desktop">
 						<div id="left">
@@ -16,7 +16,7 @@
 				</div>
 				<div id="hamburger-menu">
 					<div>
-						<span id="route-name">{{ page.title }}</span>
+						<span id="route-name">{{ page.title.startsWith('/home') ? '~' : page.title }}</span>
 						<button aria-label="hamburger menu" id="hamburger" @click="collapsed = !collapsed"></button>
 					</div>
 				</div>
@@ -102,7 +102,7 @@ $expand-collapse-anim-time: .2s;
 	}
 
 	#route-name {
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 		font-weight: bold;
 	}
 }
@@ -158,6 +158,12 @@ $expand-collapse-anim-time: .2s;
 	display: block;
 	max-width: 2rem;
 	margin-right: $content-padding;
+}
+
+#branding-mobile {
+	h1 {
+		font-size: 1.2rem;
+	}
 }
 
 #branding-desktop {
@@ -292,16 +298,10 @@ $expand-collapse-anim-time: .2s;
 
 		a {
 			opacity: 1;
-
-			&:not(.router-link-exact-active):hover::after {
-				right: -7ch;
-				content: '; cat *';
-				color: $text-color-2;
-			}
 		}
 
 		li:not(:last-child) {
-			margin-right: 12ch;
+			margin-right: 10ch;
 		}
 	}
 }
