@@ -5,7 +5,7 @@
 				<div id="branding">
 					<img id="logo" src="/img/logo.png">
 					<header id="branding-mobile">
-						<h1>Moritz.dev</h1>
+						<h1>moritzclc.me</h1>
 					</header>
 					<header id="branding-desktop">
 						<div id="left">
