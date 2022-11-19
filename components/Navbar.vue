@@ -48,7 +48,6 @@ watch(() => route.fullPath, _newRoute => {
 
 function onScroll() {
 	scrolled.value = document.firstElementChild.scrollTop > scrollThreshold
-	console.log('scrolled')
 }
 </script>
 
