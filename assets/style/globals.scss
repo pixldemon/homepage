@@ -14,6 +14,13 @@ body {
 	padding: 0;
 	background-color: $bg-color;
 	color: $text-color;
+
+	// Hide scrollbar but don't disable scrolling
+	-ms-overflow-style: none;
+	overflow-y: scroll;
+	&::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: $breakpoint) {
