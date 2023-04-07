@@ -1,40 +1,40 @@
 @import "vars.scss";
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600;700&display=swap");
 
 * {
-	box-sizing: border-box;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	-webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	background-color: $bg-color;
-	color: $text-color;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  color: $text-color;
 
-	// Hide scrollbar but don't disable scrolling
-	-ms-overflow-style: none;
-	overflow-y: scroll;
-	&::-webkit-scrollbar {
-		display: none;
-	}
+  // Hide scrollbar but don't disable scrolling
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: $breakpoint) {
-	body {
-		padding-top: $navbar-height;
-	}
+  body {
+    padding-top: $navbar-height;
+  }
 }
 
 img {
-	display: block;
-	max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 p,
 span {
-	color: $text-color;
+  color: $text-color;
 }

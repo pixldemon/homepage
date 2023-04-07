@@ -51,11 +51,11 @@ export default {
         "making games",
         "web dev",
         "tinkering with hardware",
-		"Rust",
-		"TypeScript",
-		"space stuff",
-		"talking about tech",
-		"custom keyboards",
+        "Rust",
+        "TypeScript",
+        "space stuff",
+        "talking about tech",
+        "custom keyboards",
       ],
     };
   },
@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/style/vars.scss';
+@import "@/assets/style/vars.scss";
 
 .typing-element {
   font-family: inherit;
@@ -74,7 +74,7 @@ export default {
   white-space: nowrap;
 
   span {
-	margin-left: .7ch;
+    margin-left: 0.7ch;
     white-space: nowrap;
     color: $acc1-color;
   }

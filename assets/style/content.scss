@@ -1,88 +1,92 @@
 @import "vars.scss";
 
-
 .document-driven-page {
-	margin: 0 auto;
-	font-size: 1.1rem;
-	padding: 0 $content-padding;
-	width: 100%;
-	max-width: $max-content-width;
-	font-family: 'Hind Madurai', sans-serif;
-	font-weight: lighter;
-	line-height: 1.4;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  padding: 0 $content-padding;
+  width: 100%;
+  max-width: $max-content-width;
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: lighter;
+  line-height: 1.4;
 
-	@media only screen and (max-width: $breakpoint) {
-		img {
-			float: none !important;
-			margin: 0 auto !important;
-		}
-	}
+  @media only screen and (max-width: $breakpoint) {
+    img {
+      float: none !important;
+      margin: 0 auto !important;
+    }
+  }
 
-	img.icon-24, img.icon-48 {
-		box-sizing: content-box;
-		padding: .6ch;
-		display: inline-block;
-		vertical-align: -50%;
-		margin-right: .5ch;
-	}
-	.icon-24 {
-		width: 24px;
-		height: 24px;
-	}
-	.icon-48 {
-		height: 48px;
-	}
+  img.icon-24,
+  img.icon-48 {
+    box-sizing: content-box;
+    padding: 0.6ch;
+    display: inline-block;
+    vertical-align: -50%;
+    margin-right: 0.5ch;
+  }
+  .icon-24 {
+    width: 24px;
+    height: 24px;
+  }
+  .icon-48 {
+    height: 48px;
+  }
 
-	h2, h3, h4 {
-		line-height: 1;
-		margin-bottom: 0;
-		a, a:hover {
-			color: $text-color !important;
-			text-decoration: none;
-		}
-	}
-	h2, h3 {
-		margin-top: 2.5rem;
-	}
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+    margin-bottom: 0;
+    a,
+    a:hover {
+      color: $text-color !important;
+      text-decoration: none;
+    }
+  }
+  h2,
+  h3 {
+    margin-top: 2.5rem;
+  }
 
-	a {
-		color: $acc1-color;
-		text-decoration: none;
-	}
+  a {
+    color: $acc1-color;
+    text-decoration: none;
+  }
 
-	h5 {
-		color: $text-color-2;
-		font-family: Inconsolata, sans-serif;
-		font-weight: medium;
-		margin: 0;
+  h5 {
+    color: $text-color-2;
+    font-family: Inconsolata, sans-serif;
+    font-weight: medium;
+    margin: 0;
 
-		&+* {
-			margin-top: .5rem;
-		}
-	}
+    & + * {
+      margin-top: 0.5rem;
+    }
+  }
 
-	h1+hr {
-		margin-top: -1rem;
-	}
-	hr {
-		line-height: 0.2;
-		border: none;
-		&::before {
-			font-size: 2rem;
-			display: block;
-			content: '-----';
-			color: $text-color-2;
-		}
-	}
-	ul {
-		list-style: none;
-		margin-left: 0;
-		padding-left: 1rem;
-		li::before {
-			display: inline-block;
-			content: "-";
-			width: 1rem;
-			margin-left: -1rem;
-		}
-	}
+  h1 + hr {
+    margin-top: -1rem;
+  }
+  hr {
+    line-height: 0.2;
+    border: none;
+    &::before {
+      font-size: 2rem;
+      display: block;
+      content: "-----";
+      color: $text-color-2;
+    }
+  }
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1rem;
+    li::before {
+      display: inline-block;
+      content: "-";
+      width: 1rem;
+      margin-left: -1rem;
+    }
+  }
 }

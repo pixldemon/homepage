@@ -1,3 +1,3 @@
 <template>
-	<h1>Error: Not a directory</h1>
+  <h1>Error: Not a directory</h1>
 </template>
