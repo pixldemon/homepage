@@ -53,9 +53,8 @@ export default {
         "tinkering with hardware",
         "Rust",
         "TypeScript",
-        "space stuff",
-        "talking about tech",
         "custom keyboards",
+        "learning new tech"
       ],
     };
   },
@@ -66,7 +65,9 @@ export default {
 @import "@/assets/style/vars.scss";
 
 .typing-element {
-  font-family: inherit;
+  font-family: 'Red Hat Mono', monospace;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1 !important;
   display: flex;
   align-items: flex-end;
@@ -78,6 +79,7 @@ export default {
     white-space: nowrap;
     color: $acc1-color;
   }
+
   &::after {
     display: inline-block;
     content: "";
