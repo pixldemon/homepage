@@ -4,14 +4,11 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "nuxt preview"
   },
   "devDependencies": {
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
     "@types/leaflet": "^1.7.11",
-    "@typescript-eslint/eslint-plugin": "^6.13.2",
-    "eslint": "^8.55.0",
     "nuxt": "npm:nuxt3@latest",
     "sass": "^1.54.5"
   },
