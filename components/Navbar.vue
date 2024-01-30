@@ -1,9 +1,5 @@
 <template>
-  <div
-    id="navbar"
-    @scroll="onScroll"
-    :class="{ scrolled: scrolled, collapsed: collapsed }"
-  >
+  <div id="navbar" @scroll="onScroll" :class="{ scrolled: scrolled, collapsed: collapsed }">
     <nav>
       <div id="top">
         <div id="branding">
@@ -23,11 +19,7 @@
             <span id="route-name">{{
               page.title.startsWith("/home") ? "~" : page.title
             }}</span>
-            <button
-              aria-label="hamburger menu"
-              id="hamburger"
-              @click="collapsed = !collapsed"
-            ></button>
+            <button aria-label="hamburger menu" id="hamburger" @click="collapsed = !collapsed"></button>
           </div>
         </div>
       </div>
@@ -55,12 +47,15 @@ watch(
   () => route.fullPath,
   (_newRoute) => {
     collapsed.value = true;
-    document.firstElementChild.scrollTop = 0;
+
+    if (document.firstElementChild !== null)
+      document.firstElementChild.scrollTop = 0;
   }
 );
 
 function onScroll() {
-  scrolled.value = document.firstElementChild.scrollTop > scrollThreshold;
+  if (document.firstElementChild !== null)
+    scrolled.value = document.firstElementChild.scrollTop > scrollThreshold;
 }
 </script>
 
@@ -225,7 +220,7 @@ $expand-collapse-anim-time: 0.2s;
   justify-content: space-evenly;
   list-style: none;
   margin: 0;
-  padding: 0 (4rem -$content-padding); // Hamburger icon width + padding - the negative padding on the right
+  padding: 0 (4rem (-$content-padding)); // Hamburger icon width + padding - the negative padding on the right
 
   a {
     transition: $expand-collapse-anim-time;
@@ -249,6 +244,7 @@ $expand-collapse-anim-time: 0.2s;
 
     &:not(.router-link-exact-active):hover {
       color: $text-color;
+
       &::before {
         left: -3ch;
         content: "cd ";

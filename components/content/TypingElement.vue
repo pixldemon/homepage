@@ -8,6 +8,25 @@
 <script>
 export default {
   name: "TypingElement",
+  data() {
+    return {
+      minDelay: 30,
+      maxDelay: 50,
+      phraseIndex: 0,
+      charIndex: 0,
+      currentText: "",
+      phrases: [
+        "Linux",
+        "making games",
+        "web dev",
+        "tinkering with hardware",
+        "Rust",
+        "TypeScript",
+        "custom keyboards",
+        "learning new tech"
+      ],
+    };
+  },
   created() {
     this.phraseIndex = Math.floor((this.phrases.length - 1) * Math.random());
     this.write();
@@ -38,25 +57,6 @@ export default {
         setTimeout(this.write.bind(this), 2000);
       }
     },
-  },
-  data() {
-    return {
-      minDelay: 30,
-      maxDelay: 50,
-      phraseIndex: 0,
-      charIndex: 0,
-      currentText: "",
-      phrases: [
-        "Linux",
-        "making games",
-        "web dev",
-        "tinkering with hardware",
-        "Rust",
-        "TypeScript",
-        "custom keyboards",
-        "learning new tech"
-      ],
-    };
   },
 };
 </script>

@@ -1,5 +1,3 @@
-import { defineNuxtConfig } from 'nuxt';
-
 export default defineNuxtConfig({
   app: {
     head: {
@@ -15,12 +13,13 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@nuxtjs/sitemap"],
   content: {
     // `anchorLinks` (https://content.nuxtjs.org/api/configuration#anchorlinks) doesn't actually work
     anchorlinks: false, // Neither here,
     documentDriven: true,
     markdown: {
+      // @ts-expect-error this prop is not typed
       anchorlinks: false, // nor here. Pretty sure this isn't my fault.
     },
   },
