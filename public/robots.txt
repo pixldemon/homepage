@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mclrc.me/sitemap.xml
