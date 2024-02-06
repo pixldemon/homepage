@@ -13,7 +13,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxt/content", "@nuxtjs/sitemap"],
+  modules: ["@nuxt/content"],
   content: {
     // `anchorLinks` (https://content.nuxtjs.org/api/configuration#anchorlinks) doesn't actually work
     anchorlinks: false, // Neither here,
