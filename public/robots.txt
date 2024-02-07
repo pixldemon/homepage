@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mclrc.me/sitemap.xml
+Sitemap: https://mclrc.me/sitemap-new.xml
