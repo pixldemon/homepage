@@ -4,3 +4,15 @@
     <slot />
   </div>
 </template>
+
+<script setup lang="ts">
+const route = useRoute()
+useHead(() => ({
+  link: [
+    {
+      rel: "canonical",
+      href: "https://mclrc.me" + route.path,
+    },
+  ],
+}))
+</script>
