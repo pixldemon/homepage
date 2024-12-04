@@ -220,7 +220,7 @@ $expand-collapse-anim-time: 0.2s;
   justify-content: space-evenly;
   list-style: none;
   margin: 0;
-  padding: 0 (4rem (-$content-padding)); // Hamburger icon width + padding - the negative padding on the right
+  padding: 0 (4rem - $content-padding);// Hamburger icon width + padding - the negative padding on the right
 
   a {
     transition: $expand-collapse-anim-time;
