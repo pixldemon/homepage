@@ -4,7 +4,6 @@ export default defineNuxtConfig({
       script: [
         { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
         { defer: true, src: "https://api.pirsch.io/pa.js", id: "pianjs", "data-code": "F1VD94BqyIbT44Bz0Hnbu5koeVCuDt12" },
-
       ],
       meta: [
         {
