@@ -3,7 +3,7 @@
     <nav>
       <div id="top">
         <div id="branding">
-          <img id="logo" src="/img/logo.png" />
+          <img id="logo" src="/img/pb.png" />
           <header id="branding-mobile">
             <h1>mclrc.me</h1>
           </header>
@@ -163,8 +163,10 @@ $expand-collapse-anim-time: 0.2s;
 
 #logo {
   display: block;
+  display: none;
   max-width: 2rem;
   margin-right: $content-padding;
+  border-radius: 50%;
 }
 
 #branding-mobile {
